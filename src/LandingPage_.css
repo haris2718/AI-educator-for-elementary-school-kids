@@ -1,0 +1,288 @@
+/* Overall Layout */
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    background-color: white;
+    border-bottom: 2px solid #ececec;
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  /* Burger Menu Icon */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    margin-left: auto; /* Ensures the icon is aligned to the far right */
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #4a90e2;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ececec;
+    z-index: 1000;
+    width: 700px;
+    justify-content: flex-start;
+  }
+  
+  .dropdown-column {
+    margin-right: 30px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .dropdown-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .dropdown-column ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+  }
+  
+  .dropdown-column li {
+    padding: 5px 0;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dropdown-column li:hover {
+    color: #4a90e2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Burger Menu becomes visible on smaller screens */
+    .menu-icon {
+      display: block;
+      margin-left: auto; /* Ensures the icon is aligned to the far right */
+      color: #333;
+    }
+
+    .dropdown-content {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0; /* Position the dropdown at the left edge */
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ececec;
+        z-index: 1000;
+        width: 700px; /* Increase the width */
+        justify-content: flex-start; /* Align content to the left */
+        margin: 0; /* Reset margin */
+      }
+      
+      .dropdown-column {
+        margin-right: 30px; /* Space between columns */
+        flex: 1; /* Allow columns to expand equally */
+        text-align: left; /* Align text to the left */
+      }
+
+
+  
+    /* Hide normal nav links initially on mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      right: 0; /* Align the dropdown menu to the right */
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Show nav links when burger menu is activated */
+    .nav-links.active {
+      display: flex;
+      text-align: left;
+    }
+  
+    .nav-links a {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .auth-buttons {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .login-btn,
+    .signup-btn {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Main Section */
+  .main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #a8e6cf, #dcedc1);
+  }
+  
+  .main-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .main-content h1 {
+    font-size: 3em;
+    color: #333;
+  }
+  
+  .main-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e85c50;
+  }
+  
+  .illustration {
+    width: 400px;
+  }
+  
+  .illustration img {
+    max-width: 100%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      padding: 30px;
+      text-align: center;
+    }
+  
+    .main-content h1 {
+      font-size: 2.5em;
+    }
+  
+    .main-content p {
+      font-size: 1.1em;
+    }
+  
+    .illustration {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-content h1 {
+      font-size: 2em;
+    }
+  
+    .main-content p {
+      font-size: 1em;
+    }
+  
+    .cta-btn {
+      padding: 12px 25px;
+      font-size: 1em;
+    }
+  
+    .main-section {
+      padding: 20px;
+    }
+  
+    .dropdown-content {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .dropdown-column {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  
+    .illustration {
+      width: 100%;
+    }
+  
+    .navbar {
+      padding: 0 10px;
+    }
+  }
+  

@@ -1,0 +1,186 @@
+ /* Header */
+ .header {
+    background-color: white;
+    border-bottom: 2px solid #ececec;
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  /* Burger Menu Icon */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    margin-left: auto; /* Ensures the icon is aligned to the far right */
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #4a90e2;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ececec;
+    z-index: 1000;
+    width: 700px;
+    justify-content: flex-start;
+  }
+  
+  .dropdown-column {
+    margin-right: 30px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .dropdown-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .dropdown-column ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+  }
+  
+  .dropdown-column li {
+    padding: 5px 0;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dropdown-column li:hover {
+    color: #4a90e2;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Burger Menu becomes visible on smaller screens */
+    .menu-icon {
+      display: block;
+      margin-left: auto; /* Ensures the icon is aligned to the far right */
+      color: #333;
+    }
+
+    .dropdown-content {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        left: 0; /* Position the dropdown at the left edge */
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #ececec;
+        z-index: 1000;
+        width: 100%; /* Increase the width */
+        justify-content: flex-start; /* Align content to the left */
+        margin: 0; /* Reset margin */
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+
+    
+      .dropdown-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex: 1; /* Allow columns to expand equally */
+        width: 100%;
+      }
+
+
+  
+    /* Hide normal nav links initially on mobile */
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      right: 0; /* Align the dropdown menu to the right */
+      background-color: white;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Show nav links when burger menu is activated */
+    .nav-links.active {
+      display: flex;
+      text-align: left;
+    }
+  
+    .nav-links a {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      width: 100%;
+      text-align: left;
+    }
+  
+    .auth-buttons {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .login-btn,
+    .signup-btn {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+    .dropdown-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .dropdown-column {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+  }
