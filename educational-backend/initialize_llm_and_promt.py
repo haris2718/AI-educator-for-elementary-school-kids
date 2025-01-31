@@ -43,7 +43,7 @@ chroma_path = "/content/drive/MyDrive/chroma_index1#geo"
 #vectorstore_aristotelis_semantic = Chroma(persist_directory=chroma_path2, embedding_function=embedding_model)
 vectorstore_aristotelis = Chroma(persist_directory=chroma_path, embedding_function=embedding_model)
 
-huggingfacehub_api_token='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'
+huggingfacehub_api_token=''
 
 
 llm = ChatGroq(
