@@ -32,9 +32,9 @@ from langchain.embeddings import SentenceTransformerEmbeddings
 import os
 os.environ['LANGCHAIN_TRACING_V2'] = 'true'
 os.environ['LANGCHAIN_ENDPOINT'] = 'https://api.smith.langchain.com'
-os.environ['LANGCHAIN_API_KEY'] = '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'
-#os.environ["GROQ_API_KEY"] = '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'
-os.environ["GROQ_API_KEY"] = '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'
+os.environ['LANGCHAIN_API_KEY'] = ''
+#os.environ["GROQ_API_KEY"] = ''
+os.environ["GROQ_API_KEY"] = ''
 # Set your Hugging Face API token
 embedding_model = SentenceTransformerEmbeddings(model_name="intfloat/multilingual-e5-base")
 
