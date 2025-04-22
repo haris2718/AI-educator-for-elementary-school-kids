@@ -1,0 +1,28 @@
+/* Overall Layout 
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 0px;
+  }
+*/
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .landing-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f0f8ff;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .landing-page > main {
+    flex: 1;
+  }

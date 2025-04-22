@@ -1,0 +1,192 @@
+/*
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Comic Sans MS", sans-serif;
+  }
+
+*/
+body::before {
+content: "";
+/*position: fixed;*/
+top: 0; left: 0; right: 0; bottom: 0;
+background: rgba(255, 255, 255, 0.4); /* ή darker: rgba(0, 0, 0, 0.3) */
+z-index: -1;
+}
+  
+  .learning-world {
+    position: relative;
+    min-height: 100vh;
+    /*overflow: hidden;*/
+  }
+  
+  .parallax {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+
+  .parallax-bg1 {
+    background-image: url("./images/parallax-bg2.png"); /* Ουρανός */
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: moveSky 120s linear infinite;
+  }
+
+  .parallax-bg {
+    background-image: url("./images/parallax-bg1.png"); /* Ουρανός */
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: moveSky 480s linear infinite;
+  }
+  
+  
+  .parallax-mg {
+    background-image: url("./images/parallax-mg1.png"); /* βουνά */
+    z-index: 2;
+    transform: translateY(30px);
+  }
+  
+  .world-content {
+    position: relative;
+    z-index: 3;
+    /*height: 100vh;*/
+    padding-top: 50vh;
+    padding-bottom: 50px; /* extra space so footer doesn't "κολλάει" */
+  }
+  .main-content {
+    z-index: 1;
+    max-width: 700px;
+    text-align: left;
+    color: #1f1f1f;
+  }
+  
+  .main-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #fff;
+  }
+  
+  .main-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    color: #f0f0f0;
+  }
+
+
+  .cta-btn {
+    padding: 16px 32px;
+    margin-left: 20px;
+    font-size: 1.2em;
+    background-color: #ff6b81;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+  }
+  
+  .pulse {
+    animation: pulse 2s infinite;
+  }
+  
+  .illustration {
+    width: 400px;
+    z-index: 1;
+  }
+  
+  .illustration img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease forwards;
+  }
+  
+  .animate-slide-in {
+    animation: slide-in 1s ease forwards;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;
+      padding: 40px;
+      text-align: center;
+    }
+  
+    .illustration {
+      margin-top: 30px;
+      width: 100%;
+    }
+  
+    .main-content h1 {
+      font-size: 2em;
+    }
+  
+    .main-content p {
+      font-size: 1.1em;
+    }
+  
+    .cta-btn {
+        max-width: 90vw;
+        width: fit-content;
+        white-space: nowrap;
+      }
+}
+  
+  @keyframes popup {
+    from {
+      transform: scale(0.7);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveSky {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 1000px 0; /* Ή όσο θες να μετακινηθεί */
+    }
+  }
+  
+
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slide-in {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+

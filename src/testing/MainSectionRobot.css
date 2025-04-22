@@ -1,0 +1,68 @@
+.robot-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .robot-content {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .robot-title {
+    font-size: 2.8rem;
+    color: #004d40;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .robot-subtitle {
+    font-size: 1.2rem;
+    color: #00695c;
+    margin-bottom: 2rem;
+  }
+  
+  .robot-button {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 150, 136, 0.3);
+    transition: background-color 0.3s ease;
+  }
+  
+  .robot-button:hover {
+    background-color: #00796b;
+  }
+  
+  .robot-illustration {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .robot-illustration img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    animation: floatRobot 4s ease-in-out infinite;
+  }
+  
+  @keyframes floatRobot {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
