@@ -1,0 +1,47 @@
+{
+  "name": "ai_education",
+  "private": true,
+  "homepage": "http://127.0.0.1",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^3.0.1",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@tanstack/react-query": "^5.64.2",
+    "dompurify": "^3.2.4",
+    "framer-motion": "^11.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-intersection-observer": "^9.16.0",
+    "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.11.1",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^9.11.1",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "express": "^4.21.2",
+    "globals": "^15.9.0",
+    "path": "^0.12.7",
+    "rollup": "^4.30.1",
+    "vite": "^6.2.5"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.9.5"
+  },
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
+  }
+}
