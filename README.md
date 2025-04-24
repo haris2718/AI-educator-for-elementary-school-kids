@@ -15,6 +15,9 @@ Users can interact with the system via chat or quizzes (free text and multiple c
 You can access the live app :  
 👉 [here](https://ab.aieducation.icu)
 
+<p align="center">
+  <img src="assets/ai_education.gif" width="500"/>
+</p>
 ---
 
 ## 🎯 Purpose
