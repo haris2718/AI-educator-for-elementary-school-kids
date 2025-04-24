@@ -1,3 +1,59 @@
+# 📚 Proof of Concept for RAG-Based Educational Application 
+
+This project is part of the Master's thesis of students Antonis Kaparos and Harilaos baris at International Hellenic University.
+
+It is a proof of concept of an educational platform that utilizes the Retrieval-Augmented Generation (RAG) technique to answer questions based solely on the content of selected school textbooks.
+
+Currently, it includes two knowledge sources:
+
+    The Greek 5th Grade Geography textbook
+
+    The educational material on the life and work of Aristotle
+
+Users can interact with the system via chat or quizzes (free text and multiple choice), and the responses are generated exclusively based on the content of the above materials.
+
+You can access the live app :  
+👉 [here](https://ab.aieducation.icu)
+
+---
+
+## 🎯 Purpose
+
+The goal of this project is to **demonstrate how Large Language Models (LLMs)** can be safely and accurately used in educational contexts when paired with official academic sources, using the **RAG architecture**.
+
+This is **not a complete product**, but a **proof of concept** showing how LLMs can be enhanced with textbook-based knowledge without retraining the models.
+
+---
+
+## 📘 Content Scope
+
+- The model’s knowledge is **strictly limited** to the **Greek 5th Grade Geography textbook**.
+- A similar implementation has been developed for the **life and work of Aristotle**.
+- For now, the system **only responds in Greek**, but support for other languages is planned soon.
+
+---
+
+## ✨ Features
+
+🔹 **Chat Interaction**  
+Ask questions directly to the model about the textbook content.  
+*⚠️ The model can only respond with information from the textbook.*
+
+🔹 **LLM-driven Q&A Quiz**  
+The model asks open-ended questions to test your knowledge, simulating an interactive teacher.
+
+🔹 **Multiple-Choice Quizzes**  
+Test your understanding through ready-made multiple-choice questions.
+
+🔹 **Model Selection**  
+You can choose from:
+- **Gemini models**
+- **Groq-powered models** (e.g., LLaMA, Mixtral, Gemma)
+
+---
+
+
+
 ## 🔍 Understanding RAG: Retrieval-Augmented Generation
 
 **Retrieval-Augmented Generation (RAG)** is an advanced architecture designed to enhance the performance of Large Language Models (LLMs) by enabling them to access and utilize external sources of information such as PDF files, text documents, databases, or even video transcripts. Unlike traditional LLMs that rely solely on their training data, RAG empowers models to retrieve relevant, up-to-date knowledge from vector databases in real time, making their responses more accurate, relevant, and context-aware.
