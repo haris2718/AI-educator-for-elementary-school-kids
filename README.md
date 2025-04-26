@@ -1,4 +1,4 @@
-# 📚 Proof of Concept for RAG-Based Educational Application 
+# RAG-Based Educational Application 
 
 This project is part of the Master's thesis of students Antonis Kaparos and Harilaos baris at International Hellenic University.
 
@@ -13,14 +13,14 @@ Currently, it includes two knowledge sources:
 Users can interact with the system via chat or quizzes (free text and multiple choice), and the responses are generated exclusively based on the content of the above materials.
 
 You can access the live app :  
-👉 [here](https://ab.aieducation.icu)
+[here](https://ab.aieducation.icu)
 
 <p align="center">
   <img src="assets/ai_education.gif" width="800"/>
 </p>
 ---
 
-## 🎯 Purpose
+##  Purpose
 
 The goal of this project is to **demonstrate how Large Language Models (LLMs)** can be safely and accurately used in educational contexts when paired with official academic sources, using the **RAG architecture**.
 
@@ -28,7 +28,7 @@ This is **not a complete product**, but a **proof of concept** showing how LLMs 
 
 ---
 
-## 📘 Content Scope
+##  Content Scope
 
 - The model’s knowledge is **strictly limited** to the **Greek 5th Grade Geography textbook**.
 - A similar implementation has been developed for the **life and work of Aristotle**.
@@ -36,11 +36,11 @@ This is **not a complete product**, but a **proof of concept** showing how LLMs 
 
 ---
 
-## ✨ Features
+##  Features
 
 🔹 **Chat Interaction**  
 Ask questions directly to the model about the textbook content.  
-*⚠️ The model can only respond with information from the textbook.*
+* The model can only respond with information from the textbook.*
 
 🔹 **LLM-driven Q&A Quiz**  
 The model asks open-ended questions to test your knowledge, simulating an interactive teacher.
@@ -57,13 +57,13 @@ You can choose from:
 
 
 
-## 🔍 Understanding RAG: Retrieval-Augmented Generation
+##  Understanding RAG: Retrieval-Augmented Generation
 
 **Retrieval-Augmented Generation (RAG)** is an advanced architecture designed to enhance the performance of Large Language Models (LLMs) by enabling them to access and utilize external sources of information such as PDF files, text documents, databases, or even video transcripts. Unlike traditional LLMs that rely solely on their training data, RAG empowers models to retrieve relevant, up-to-date knowledge from vector databases in real time, making their responses more accurate, relevant, and context-aware.
 
 ---
 
-## 🧠 Why is RAG Necessary?
+##  Why is RAG Necessary?
 
 While LLMs are powerful tools, they come with inherent limitations:
 
@@ -75,20 +75,20 @@ RAG addresses these problems by **combining generation with real-time retrieval*
 
 ---
 
-## 💼 Business Benefits of RAG
+##  Business Benefits of RAG
 
 For businesses, adopting RAG can significantly boost efficiency and insight generation across multiple sectors:
 
-- ✅ **Customer Support**: Deliver accurate, timely answers by retrieving data from internal documentation or product manuals.
-- ✅ **Legal & Compliance**: Automatically source policies and laws to support legal interpretations or compliance checks.
-- ✅ **HR & Internal Ops**: Empower employees with self-service access to company policies, onboarding docs, and training material.
-- ✅ **Market Intelligence**: Combine internal reports with live data to generate up-to-date market analysis.
+-  **Customer Support**: Deliver accurate, timely answers by retrieving data from internal documentation or product manuals.
+-  **Legal & Compliance**: Automatically source policies and laws to support legal interpretations or compliance checks.
+-  **HR & Internal Ops**: Empower employees with self-service access to company policies, onboarding docs, and training material.
+-  **Market Intelligence**: Combine internal reports with live data to generate up-to-date market analysis.
 
 By using RAG, businesses can ensure **consistent, reliable, and scalable knowledge delivery**, reducing manual effort and increasing user satisfaction.
 
 ---
 
-## 📦 How It Works: Embeddings, Indexing, and Retrieval
+##  How It Works: Embeddings, Indexing, and Retrieval
 
 At the core of RAG lies the use of **embeddings** and **vector databases**:
 
@@ -99,13 +99,13 @@ At the core of RAG lies the use of **embeddings** and **vector databases**:
 
 ---
 
-## ✍️ Prompt Engineering and Continuous Updates
+##  Prompt Engineering and Continuous Updates
 
 To make RAG even more effective, **prompt engineering** is used to frame the inputs in a way that maximizes the model's understanding and output quality. Additionally, continuous updating of the external data—either periodically or in real-time—ensures that the system always works with **the most current knowledge available**, greatly enhancing reliability and performance.
 
 ---
 
-## 🧩 Conclusion
+##  Conclusion
 
 In summary, **RAG transforms LLMs from static knowledge engines to dynamic, context-aware assistants**. With the integration of vector search and real-time retrieval, businesses can leverage the power of AI while ensuring accuracy, freshness, and relevance in every response.
 
